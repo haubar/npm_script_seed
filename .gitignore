@@ -1,5 +1,5 @@
-/_build
-/cover
-/deps
-erl_crash.dump
-*.ez
+build
+src
+node_modules
+npm-debug.log
+
