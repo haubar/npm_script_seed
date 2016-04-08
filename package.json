@@ -6,7 +6,10 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	  "watch:css": "onchange 'src/scss/*.scss' -- npm run build:css",
+    "watch:js": "onchange 'src/js/*.js' -- npm run build:js",
+    "watch:all": "npm-run-all -p serve watch:css watch:js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/haubar/npm_script_seed/issues"
-  },
-  "homepage": "https://github.com/haubar/npm_script_seed#readme"
+  }
 }
