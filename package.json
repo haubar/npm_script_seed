@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "eslint": "^2.7.0",
+    "node-sass": "^3.4.2",
     "onchange": "^2.2.0",
     "postcss": "^5.0.19",
     "postcss-cli": "^2.5.1",
