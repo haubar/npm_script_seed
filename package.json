@@ -4,10 +4,12 @@
   "description": "npm script ",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "postcss": "^5.0.19"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	  "watch:css": "onchange 'src/scss/*.scss' -- npm run build:css",
+    "watch:css": "onchange 'src/scss/*.scss' -- npm run build:css",
     "watch:js": "onchange 'src/js/*.js' -- npm run build:js",
     "watch:all": "npm-run-all -p serve watch:css watch:js"
   },
