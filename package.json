@@ -15,6 +15,9 @@
     "run-sequence": "^1.1.5"
   },
   "scripts": {
+    "prebuild": "echo I run before the build script",
+    "build": "cross-env NODE_ENV=production webpack",
+    "postbuild": "echo I run after the build script",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
