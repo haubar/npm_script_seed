@@ -15,13 +15,14 @@
     "run-sequence": "^1.1.5"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -r dist/*",
+    "lint": "eslint src/js",
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "prebuild": "npm run clean -s",
     "build": "cross-env NODE_ENV=production webpack",
     "postbuild": "echo I run after the build script",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -r dist/*",
-    "scss": "node-sass --output-style compressed -o dist/css src/scss",
-    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "watch:css": "onchange 'src/scss/*.scss' -- npm run build:css",
     "watch:js": "onchange 'src/js/*.js' -- npm run build:js",
     "watch:all": "npm-run-all -p serve watch:css watch:js"
