@@ -19,6 +19,7 @@
     "build": "cross-env NODE_ENV=production webpack",
     "postbuild": "echo I run after the build script",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -r dist/*",
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "watch:css": "onchange 'src/scss/*.scss' -- npm run build:css",
