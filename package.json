@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "eslint": "^2.7.0",
     "node-sass": "^3.4.2",
     "onchange": "^2.2.0",
@@ -13,7 +14,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	  "scss": "node-sass --output-style compressed -o dist/css src/scss"
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
     "watch:css": "onchange 'src/scss/*.scss' -- npm run build:css",
     "watch:js": "onchange 'src/js/*.js' -- npm run build:js",
     "watch:all": "npm-run-all -p serve watch:css watch:js"
